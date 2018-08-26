@@ -1,0 +1,3 @@
+alias bat='upower -i $(upower -e | grep '/battery') | grep --color=never -E "state|to\ full|to\ empty|percentage"'
+alias d='date'
+alias c='clear'
