@@ -116,6 +116,10 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# Functions
 a() {
   amixer set Master "$1"%
+}
+b() {
+  xbacklight -set "$1"%
 }
