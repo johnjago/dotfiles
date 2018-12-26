@@ -1,7 +1,10 @@
 alias bat='upower -i $(upower -e | grep '/battery') | grep --color=never -E "state|to\ full|to\ empty|percentage"'
 alias d='date'
 alias c='clear'
+
 alias gs='git status'
 alias gd='git diff'
 alias ga='git add -A'
 alias gl='git log'
+alias gb='git branch'
+alias gp='git push'
