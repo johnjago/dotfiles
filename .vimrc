@@ -48,7 +48,6 @@ nnoremap <C-k> :bn<CR>
 set pastetoggle=<F3>
 
 " spelling
-
 if v:version >= 700
   " enable spell check for markdown files
   autocmd BufNewFile,BufRead *.md setlocal spell spelllang=en
