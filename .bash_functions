@@ -35,5 +35,5 @@ function th()
 
 function play_sound()
 {
-  pacat $1 > padsp
+  cat $1 | aplay
 }
