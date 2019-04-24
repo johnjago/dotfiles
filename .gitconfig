@@ -3,3 +3,5 @@
 [user]
 	email = johnjago@protonmail.com
 	name = John Jago
+[core]
+	editor = vim
