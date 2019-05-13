@@ -1,0 +1,17 @@
+{
+    "breadcrumbs.enabled": false,
+    "editor.renderIndentGuides": false,
+    "editor.renderWhitespace": "boundary",
+    "editor.rulers": [
+        80
+    ],
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "extensions.ignoreRecommendations": true,
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "window.titleBarStyle": "custom",
+    "workbench.colorTheme": "Solarized Light",
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.statusBar.feedback.visible": false,
+}
