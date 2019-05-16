@@ -6,5 +6,5 @@ do
   sleep 60s
 done &
 
-redshift -O 2700 -g 0.8 -m randr &
+redshift -O 3400 -g 0.8 -m randr &
 exec dwm
