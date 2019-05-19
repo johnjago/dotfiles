@@ -6,5 +6,6 @@ Current setup:
 
  - Xubuntu 16.04, Xenial Xerus (soon to be replaced)
  - dwm
+ - st
  - Bash
  - Vim
