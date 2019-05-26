@@ -39,11 +39,6 @@ set ignorecase              " search ignoring case
 set smartcase               " except when using capital letters
 nnoremap <leader><space> :nohlsearch<CR>
 
-""" colors
-
-hi ColorColumn ctermbg=DarkGray
-hi Cursor ctermbg=DarkGray
-
 """ whitespace
 
 set listchars=tab:>~,trail:·,space:·
@@ -77,8 +72,3 @@ nnoremap <leader>w <C-w><C-w>
 
 " switch for pasting text from other applications
 set pastetoggle=<F3>
-
-" spell check for .md files
-if v:version >= 700
-  autocmd BufNewFile,BufRead *.md setlocal spell spelllang=en
-endif
