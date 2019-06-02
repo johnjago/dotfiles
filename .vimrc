@@ -10,7 +10,9 @@ set softtabstop=2           " virtual tab stop
 set shiftwidth=2            " when indenting with '>', use 2 spaces
 set shiftround              " always round indents to multiple of shiftwidth
 set backspace=indent,eol,start  " backspace over these unlike vi
+
 filetype plugin indent on   " load plugins and indent settings for the filetype
+autocmd FileType go setlocal noexpandtab shiftwidth=4 softtabstop=4
 
 """ editor
 
