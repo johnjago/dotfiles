@@ -1,5 +1,5 @@
 set nocompatible            " do not use vi defaults
-syntax off                  " syntax highlighting
+syntax on                   " syntax highlighting
 
 """ indents
 
