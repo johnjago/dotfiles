@@ -4,8 +4,12 @@ These are my configuration files.
 
 Current setup:
 
- - Xubuntu 16.04, Xenial Xerus (soon to be replaced)
+ - Debian
  - dwm
  - st
  - Bash
  - Vim
+
+ ![](img/desktop_win.png)
+
+ ![](img/desktop_bg.png)
