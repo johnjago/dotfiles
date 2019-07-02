@@ -7,5 +7,5 @@ do
 done &
 
 feh --bg-scale ~/img/bg/set-*
-redshift -O 4300 -m randr
+redshift -O 3700 -m randr
 exec dwm
