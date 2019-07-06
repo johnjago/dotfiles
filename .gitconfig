@@ -5,3 +5,28 @@
 	name = John Jago
 [core]
 	editor = vim
+[alias]
+    l = log
+
+    # Visualize commits and branches
+    lg = log --graph --decorate --oneline
+
+    # Visualize with authors and dates
+    lga = log --graph --abbrev-commit --decorate --format=format:'%C(auto)%h%C(reset) - %C(green)(%ar)%C(reset) %s [%an]%C(reset)%C(auto)%d%C(reset)'
+
+    s = status
+    a = add -A
+    c = commit -m
+    m = commit --amend --verbose
+    p = push
+    pu = pull
+    d = diff
+    dc = diff --cached
+    co = checkout
+    cob = checkout -b
+
+    # List branches sorted by last modified
+    b = "!git for-each-ref --sort='-authordate' --format='%(authordate)%09%(objectname:short)%09%(refname)' refs/heads | sed -e 's-refs/heads/--'"
+
+    # List aliases
+    la = "!git config -l | grep alias | cut -c 7-"
