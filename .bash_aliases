@@ -8,7 +8,8 @@ alias l='ls -CF'
 alias la='ls -A'
 alias ll='ls -alF'
 alias c='clear'
-alias r='reset'
+alias re='reset'
+alias r='ranger'
 
 # See [alias] section in .gitconfig
 for al in `git --list-cmds=alias`; do
