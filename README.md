@@ -10,8 +10,8 @@ Current setup:
  - Bash
  - Vim
 
- ![](img/desktop-bg.png)
+![](img/desktop-bg.png)
 
- ![](img/desktop-two-windows.png)
+![](img/desktop-three-windows.png)
 
- ![](img/desktop-three-windows.png)
+![](img/desktop-two-windows.png)
