@@ -1,6 +1,6 @@
 # dotfiles
 
-These are my configuration files.
+I use the Solarized color scheme for nearly everything—it's wonderful.
 
 Current setup:
 
@@ -10,6 +10,8 @@ Current setup:
  - Bash
  - Vim
 
- ![](img/desktop_win.png)
+ ![](img/desktop-bg.png)
 
- ![](img/desktop_bg.png)
+ ![](img/desktop-two-windows.png)
+
+ ![](img/desktop-three-windows.png)
