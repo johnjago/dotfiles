@@ -10,7 +10,6 @@
     "extensions.ignoreRecommendations": true,
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
-    "window.titleBarStyle": "custom",
     "workbench.colorTheme": "Solarized Light",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.statusBar.feedback.visible": false,
