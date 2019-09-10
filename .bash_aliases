@@ -10,6 +10,7 @@ alias ll='ls -alF'
 alias c='clear'
 alias re='reset'
 alias r='ranger'
+alias s='slock'
 
 # See [alias] section in .gitconfig
 for al in `git --list-cmds=alias`; do
