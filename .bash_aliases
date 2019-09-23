@@ -11,6 +11,7 @@ alias c='clear'
 alias re='reset'
 alias r='ranger'
 alias s='slock'
+alias e='exit'
 
 # See [alias] section in .gitconfig
 for al in `git --list-cmds=alias`; do
