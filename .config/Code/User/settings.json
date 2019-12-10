@@ -13,4 +13,5 @@
     "workbench.colorTheme": "Solarized Light",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.statusBar.feedback.visible": false,
+    "latex-workshop.view.pdf.viewer": "tab",
 }
