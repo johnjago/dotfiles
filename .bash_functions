@@ -18,7 +18,7 @@ function time_func()
     echo -ne "  $(date -u --date @$(($date - `date +%s`)) +%H:%M:%S)\r";
     sleep 1
   done
-  play_sound ~/bowl.wav
+  play_sound ~/downloads/bowl.wav
 }
 
 function tm()

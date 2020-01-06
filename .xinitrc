@@ -6,6 +6,6 @@ do
   sleep 60s
 done &
 
-feh --bg-scale ~/img/bg/set-*
+feh --bg-scale ~/images/wallpaper.*
 redshift -O 3700 -m randr
 exec dwm

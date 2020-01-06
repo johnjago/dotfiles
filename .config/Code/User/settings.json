@@ -14,4 +14,6 @@
     "workbench.startupEditor": "newUntitledFile",
     "workbench.statusBar.feedback.visible": false,
     "latex-workshop.view.pdf.viewer": "tab",
+    "update.mode": "manual",
+    "editor.tabSize": 2,
 }
