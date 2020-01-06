@@ -20,6 +20,7 @@
     s = status
     a = add -A
     c = commit
+    cm = commit -m
     m = commit --amend --verbose
     p = push
     pu = pull
