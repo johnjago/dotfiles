@@ -6,6 +6,8 @@
 	signingkey = FF986DB025B5DD5F
 [core]
 	editor = vim
+[commit]
+	gpgsign = true
 [alias]
     l = log
 
