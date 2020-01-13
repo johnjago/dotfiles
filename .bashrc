@@ -75,3 +75,6 @@ fi
 if [ -f ~/.bash_functions ]; then
     . ~/.bash_functions
 fi
+
+# gnupg2 needs this for pinentry to work
+export GPG_TTY=$(tty)
