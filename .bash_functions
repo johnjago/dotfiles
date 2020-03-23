@@ -1,16 +1,19 @@
 # Set audio volume
+# For example, `a 50` sets volume to 50%
 function a()
 {
   amixer set Master "$1"%
 }
 
 # Set brightness
+# For example, `b 50` sets brightness to 50%
 function b()
 {
   xbacklight -set "$1"%
 }
 
-# Countdown timer
+# Countdown timer that shows the time remaining and plays a sound when the
+# time is up. For example, `tm 30` sets a timer for 30 minutes.
 function time_func()
 {
   date=$((`date +%s` + $1));
