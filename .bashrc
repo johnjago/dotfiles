@@ -14,8 +14,8 @@ HISTCONTROL=ignoreboth
 # Append to the history file, don't overwrite it.
 shopt -s histappend
 
-HISTSIZE=1000
-HISTFILESIZE=2000
+HISTSIZE=20000
+HISTFILESIZE=20000
 
 # Check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -29,12 +29,13 @@ case "$TERM" in
     xterm-color|*-256color) color_prompt=yes;;
 esac
 
-# Used in PS1 below
+# If git branch outputs to stderr, discard. Otherwise find the name of the
+# current branch and format it for use in PS1.
 parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
-# Set the prompt string and show the current branch if inside a git repository.
+# Set the prompt string and show the current branch if inside a Git repository.
 # Format example: user@host ~/code/dotfiles (master) $
 if [ "$color_prompt" = yes ]; then
     PS1="\u@\h \[\033[01;34m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
@@ -43,7 +44,7 @@ else
 fi
 unset color_prompt
 
-# Color output of ls and grep
+# Color the output of ls and grep
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
