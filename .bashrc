@@ -68,6 +68,12 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# Show suggestions after one tab; cycle through commands after listing
+bind "TAB:menu-complete"
+bind "set show-all-if-ambiguous on"
+bind "set completion-ignore-case on"
+bind "set menu-complete-display-prefix on"
+
 # Include aliases
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
