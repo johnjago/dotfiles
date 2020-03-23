@@ -8,7 +8,8 @@ case $- in
       *) return;;
 esac
 
-# Don't put duplicate lines or lines starting with space in the history.
+# Don't put consecutive duplicate lines or lines starting with space in the
+# history.
 HISTCONTROL=ignoreboth
 
 # Append to the history file, don't overwrite it.
@@ -67,12 +68,12 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# Include other aliases
+# Include aliases
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-# Include other functions
+# Include functions
 if [ -f ~/.bash_functions ]; then
     . ~/.bash_functions
 fi

@@ -8,10 +8,11 @@ alias l='ls -CF'
 alias la='ls -A'
 alias ll='ls -alF'
 alias c='clear'
-alias re='reset'
+alias e='exit'
+alias v='vim'
 alias r='ranger'
 alias s='slock'
-alias e='exit'
+alias dc='docker-compose'
 
 # See [alias] section in .gitconfig
 for al in `git --list-cmds=alias`; do
