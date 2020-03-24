@@ -4,9 +4,10 @@
 #   percentage:          58%
 alias bat='upower -i $(upower -e | grep '/battery') | grep --color=never -E "state|to\ full|to\ empty|percentage"'
 
-alias l='ls -CF'
+alias ls='ls -CF --color=auto --group-directories-first'
+alias l='ls'
 alias la='ls -A'
-alias ll='ls -alF'
+alias ll='ls -al'
 alias c='clear'
 alias e='exit'
 alias v='vim'
