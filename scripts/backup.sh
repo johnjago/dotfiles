@@ -1,6 +1,6 @@
 #!/bin/bash
 
-tar czvf /tmp/$(date -Idate)_home.tar.gz \
+tar czvf /tmp/home_$(date -Idate).tar.gz \
   --exclude=$HOME/downloads \
   --exclude=**/node_modules/* \
   --exclude=**/.git/* \
