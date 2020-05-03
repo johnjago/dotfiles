@@ -3,11 +3,8 @@
 [user]
 	email = johnjago@protonmail.com
 	name = John Jago
-	signingkey = FF986DB025B5DD5F
 [core]
 	editor = vim
-[commit]
-	gpgsign = true
 [alias]
     l = log
 
