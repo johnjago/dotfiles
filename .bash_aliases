@@ -13,6 +13,7 @@ alias e='exit'
 alias v='vim'
 alias r='ranger'
 alias s='slock'
+alias d='docker'
 alias dc='docker-compose'
 
 # See [alias] section in .gitconfig
