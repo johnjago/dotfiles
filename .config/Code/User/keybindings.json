@@ -1,4 +1,6 @@
 [
      { "key": "cmd+shift+j", "command": "workbench.action.terminal.focusNext" },
-     { "key": "cmd+shift+k", "command": "workbench.action.terminal.focusPrevious" }
+     { "key": "cmd+shift+k", "command": "workbench.action.terminal.focusPrevious" },
+     { "key": "ctrl+`", "command": "workbench.action.closePanel" },
+     { "key": "ctrl+`", "command": "workbench.action.toggleMaximizedPanel", "when": "!terminalFocus" },
 ]
