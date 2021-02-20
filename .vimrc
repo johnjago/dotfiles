@@ -4,10 +4,9 @@ syntax on                   " syntax highlighting
 """ indents
 
 set autoindent              " set cursor at same indent level as line above
-set expandtab               " spaces instead of tabs
-set tabstop=4               " width of existing tabs
-set softtabstop=2           " virtual tab stop
-set shiftwidth=2            " when indenting with '>', use 2 spaces
+set noexpandtab             " tabs for indentation
+set tabstop=4               " width of tabs
+set shiftwidth=4            " when indenting with '>', indent this far
 set shiftround              " always round indents to multiple of shiftwidth
 set backspace=indent,eol,start  " backspace over these unlike vi
 
