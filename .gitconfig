@@ -20,6 +20,7 @@
     cm = commit -m
     m = commit --amend --verbose
     p = push
+    pt = push --tags
     pu = pull
     d = diff
     dc = diff --cached
