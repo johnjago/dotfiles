@@ -1,5 +1,4 @@
 {
-    "breadcrumbs.enabled": false,
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.insertSpaces": false,
     "editor.renderIndentGuides": false,
@@ -92,4 +91,12 @@
         "zlib",
         "wordpress"
     ],
+    "markdown.extension.toc.slugifyMode": "gitlab",
+    "go.toolsManagement.autoUpdate": true,
+    "spellright.language": [
+        "en-US"
+    ],
+    "workbench.editor.untitled.hint": "hidden",
+    "breadcrumbs.enabled": false,
+    "security.workspace.trust.untrustedFiles": "open",
 }
