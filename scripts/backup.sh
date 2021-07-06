@@ -8,4 +8,9 @@ tar czvf /tmp/home_$(date -Idate).tar.gz \
   --exclude=**/.cache/* \
   --exclude=**/.npm/* \
   --exclude=**/.gradle/* \
+  --exclude=**/cartinsight/* \
+  --exclude=**/CacheStorage/* \
+  --exclude=**/go/src/* \
+  --exclude=**/Cache/* \
+  --exclude=**/.rustup/* \
   $HOME
