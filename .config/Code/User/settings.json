@@ -1,6 +1,8 @@
 {
+    "breadcrumbs.enabled": false,
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.insertSpaces": false,
+    "editor.fontFamily": "'Source Code Pro', 'monospace', monospace, 'Droid Sans Fallback'",
     "editor.renderIndentGuides": false,
     "editor.renderWhitespace": "boundary",
     "editor.rulers": [
@@ -11,11 +13,14 @@
     "extensions.ignoreRecommendations": true,
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
+    "go.toolsManagement.autoUpdate": true,
     "javascript.updateImportsOnFileMove.enabled": "always",
     "latex-workshop.view.pdf.viewer": "tab",
     "typescript.updateImportsOnFileMove.enabled": "always",
+    "security.workspace.trust.untrustedFiles": "open",
     "update.mode": "manual",
     "workbench.colorTheme": "Solarized Light",
+    "workbench.editor.untitled.hint": "hidden",
     "workbench.startupEditor": "newUntitledFile",
     "intelephense.stubs": [
         "apache",
@@ -91,12 +96,4 @@
         "zlib",
         "wordpress"
     ],
-    "markdown.extension.toc.slugifyMode": "gitlab",
-    "go.toolsManagement.autoUpdate": true,
-    "spellright.language": [
-        "en-US"
-    ],
-    "workbench.editor.untitled.hint": "hidden",
-    "breadcrumbs.enabled": false,
-    "security.workspace.trust.untrustedFiles": "open",
 }
