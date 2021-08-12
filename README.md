@@ -3,16 +3,18 @@
 I use the [Solarized](https://ethanschoonover.com/solarized/) color scheme for
 nearly everything—it's wonderful.
 
-**Currently** Debian / Bash / Vim / [dwm](https://dwm.suckless.org/) / [st](https://st.suckless.org/)
+I'm currently using Debian, Bash, Vim, [dwm](https://dwm.suckless.org/), and [st](https://st.suckless.org/).
 
-**Soon to be** Arch / Zsh / Neovim / [dwm](https://dwm.suckless.org/) / [st](https://st.suckless.org/)
+Soon I plan to switch to Arch, Zsh, Neovim, [dwm](https://dwm.suckless.org/), and [st](https://st.suckless.org/).
 
 ## Goals
 
-- It must be **lightweight** since my current laptop isn't the best, and I tend
+My tools are carefully chosen.
+
+- They must be **lightweight** since my current laptop isn't the best, and I tend
   to keep my devices for a long time.
-- It must **maximize my workflow** without getting in the way.
-- It must **use screen space efficiently** since I love 13.3" laptops and don't
+- They must **maximize my workflow** without getting in the way.
+- They must **use screen space efficiently** since I love 13.3" laptops and don't
   usually use a monitor, instead keeping the laptop on a stand with keyboard and
   mouse.
 
@@ -29,10 +31,8 @@ nearly everything—it's wonderful.
 
 ## Screenshots
 
-(to be updated soon)
+The typeface in the terminal, status bar, and code editor is Source Code Pro.
 
-![](screenshots/desktop-bg.png)
+![](screenshots/wall.png)
 
-![](screenshots/desktop-three-windows.png)
-
-![](screenshots/desktop-two-windows.png)
+![](screenshots/terminals.png)
