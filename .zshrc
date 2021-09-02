@@ -2,22 +2,22 @@ autoload -U compinit colors vcs_info
 colors
 compinit
 
+# ╔════════════════════════════════════════════════════════════════════════════╗
+# ║ Prompt                                                                     ║
+# ╚════════════════════════════════════════════════════════════════════════════╝
+
 parse_git_branch() {
 	git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
 setopt PROMPT_SUBST
-PROMPT='%B%F{blue}%9c%f%F{yellow}$(parse_git_branch)%f%b $ '
+PROMPT='%B%F{blue}%9c%f%F{yellow}$(parse_git_branch)%f%b '
+
+# ╔════════════════════════════════════════════════════════════════════════════╗
+# ║ History                                                                    ║
+# ╚════════════════════════════════════════════════════════════════════════════╝
 
 setopt sharehistory
-
-# Report command running time if it is more than 3 seconds
-REPORTTIME=3
-
-# Keep a lot of history
-HISTFILE=~/.zsh_history
-HISTSIZE=100000
-SAVEHIST=100000
 
 # Add commands to history as they are entered, don't wait for shell to exit
 setopt INC_APPEND_HISTORY
@@ -31,6 +31,14 @@ setopt HIST_IGNORE_ALL_DUPS
 # Do not remember commands that start with a whitespace
 setopt HIST_IGNORE_SPACE
 
+HISTFILE=~/.zsh_history
+HISTSIZE=100000
+SAVEHIST=100000
+
+# ╔════════════════════════════════════════════════════════════════════════════╗
+# ║ General                                                                    ║
+# ╚════════════════════════════════════════════════════════════════════════════╝
+
 # Correct spelling of all arguments in the command line
 setopt CORRECT_ALL
 
@@ -38,3 +46,51 @@ setopt CORRECT_ALL
 zstyle ':completion:*' completer _complete _correct _approximate 
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
+
+# ╔════════════════════════════════════════════════════════════════════════════╗
+# ║ Aliases                                                                    ║
+# ╚════════════════════════════════════════════════════════════════════════════╝
+
+alias ..='cd ..'
+alias ...='cd ../../'
+alias ls='ls -CF --color=auto --group-directories-first'
+alias l='ls'
+alias la='ls -A'
+alias ll='ls -al'
+alias h='history'
+alias g='grep'
+alias c='clear'
+alias e='exit'
+alias v='vim'
+alias r='ranger'
+alias s='slock'
+alias d='docker'
+alias dc='docker-compose'
+
+# Show the battery status like this:
+#   state:               discharging
+#   time to empty:       5.8 hours
+#   percentage:          58%
+alias bat='upower -i $(upower -e | grep '/battery') | grep --color=never -E "state|to\ full|to\ empty|percentage"'
+
+# See [alias] section in .gitconfig
+for al in `git --list-cmds=alias`; do
+    alias g$al="git $al"
+done
+
+# Stage and commit all files (modified, deleted, and untracked)
+alias gac='git add -A && git commit -m'
+
+# ╔════════════════════════════════════════════════════════════════════════════╗
+# ║ I should really bind some keys                                             ║
+# ╚════════════════════════════════════════════════════════════════════════════╝
+
+# Set audio volume. For example, `a 50` sets volume to 50%
+function a() {
+  amixer set Master "$1"%
+}
+
+# Set brightness, for example, `b 50` sets brightness to 50%
+function b() {
+  xbacklight -set "$1"%
+}
