@@ -1,0 +1,37 @@
+diff --git a/config.def.h b/config.def.h
+index a2ac963..32d045b 100644
+--- a/config.def.h
++++ b/config.def.h
+@@ -7,15 +7,13 @@ static const int showbar            = 1;        /* 0 means no bar */
+ static const int topbar             = 1;        /* 0 means bottom bar */
+ static const char *fonts[]          = { "monospace:size=10" };
+ static const char dmenufont[]       = "monospace:size=10";
+-static const char col_gray1[]       = "#222222";
+-static const char col_gray2[]       = "#444444";
+-static const char col_gray3[]       = "#bbbbbb";
+-static const char col_gray4[]       = "#eeeeee";
+-static const char col_cyan[]        = "#005577";
++static const char col_base00[]      = "#657b83"; /* body text */
++static const char col_base2[]       = "#eee8d5"; /* background highlights */
++static const char col_base3[]       = "#fdf6e3"; /* background */
+ static const char *colors[][3]      = {
+ 	/*               fg         bg         border   */
+-	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
+-	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
++	[SchemeNorm] = { col_base00, col_base3, col_base2 },
++	[SchemeSel]  = { col_base00, col_base2, col_base2 },
+ };
+ 
+ /* tagging */
+@@ -57,7 +55,7 @@ static const Layout layouts[] = {
+ 
+ /* commands */
+ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
+-static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
++static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_base3, "-nf", col_base00, "-sb", col_base2, "-sf", col_base00, NULL };
+ static const char *termcmd[]  = { "st", NULL };
+ 
+ static Key keys[] = {
+-- 
+2.20.1
+
