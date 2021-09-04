@@ -19,6 +19,7 @@
     "typescript.updateImportsOnFileMove.enabled": "always",
     "security.workspace.trust.untrustedFiles": "open",
     "update.mode": "manual",
+    "window.titleBarStyle": "custom",
     "workbench.colorTheme": "Solarized Light",
     "workbench.editor.untitled.hint": "hidden",
     "workbench.startupEditor": "newUntitledFile",
