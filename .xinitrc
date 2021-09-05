@@ -1,14 +1,17 @@
 while true
 do
   sh .xsetroot.sh
-
-  BATTERY=$(acpi -b | awk '{ print $4 }' | tr -d ',')
-  if [ $(echo $BATTERY | tr -d '%') -lt 15 ]; then
-    notify-send 'Low battery'
-  fi
   sleep 60s
 done &
 
+# Set the wallpaper
 feh --bg-fill ~/images/wallpaper/002.*
+
+# Use a low color temperature all day
 redshift -O 3700 -m randr
+
+# Turn on the notification daemon
+dunst > /dev/null 2>&1 &
+
+# Start the window manager
 exec dwm
