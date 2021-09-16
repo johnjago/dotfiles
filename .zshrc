@@ -47,20 +47,24 @@ zstyle ':completion:*' completer _complete _correct _approximate
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
+# Support commands with # comments at the end
+setopt interactivecomments
+
 # ╔════════════════════════════════════════════════════════════════════════════╗
 # ║ Aliases                                                                    ║
 # ╚════════════════════════════════════════════════════════════════════════════╝
 
 alias ..='cd ..'
 alias ...='cd ../../'
+alias ce='cd ~/code'
+alias dl='cd ~/downloads'
 alias ls='ls -CF --color=auto --group-directories-first'
 alias l='ls'
 alias la='ls -A'
 alias ll='ls -al'
 alias h='history'
 alias g='grep'
-alias c='cat'
-alias k='clear'
+alias c='clear'
 alias e='exit'
 alias v='vim'
 alias r='ranger'
