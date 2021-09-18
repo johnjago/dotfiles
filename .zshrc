@@ -68,7 +68,7 @@ alias h='history'
 alias g='grep'
 alias c='clear'
 alias e='exit'
-alias v='vim'
+alias v='nvim'
 alias r='ranger'
 alias s='slock'
 alias d='docker'
@@ -89,7 +89,7 @@ done
 alias gac='git add -A && git commit -m'
 
 # ╔════════════════════════════════════════════════════════════════════════════╗
-# ║ I should really bind some keys                                             ║
+# ║ For when it's more convenient                                              ║
 # ╚════════════════════════════════════════════════════════════════════════════╝
 
 # Set audio volume. For example, `a 50` sets volume to 50%
@@ -97,7 +97,7 @@ function a() {
   amixer set Master "$1"%
 }
 
-# Set brightness, for example, `b 50` sets brightness to 50%
+# Set brightness. For example, `b 50` sets brightness to 50%
 function b() {
   xbacklight -set "$1"%
 }
