@@ -17,19 +17,19 @@ PROMPT='%B%F{blue}%9c%f%F{yellow}$(parse_git_branch)%f%b '
 # ║ History                                                                    ║
 # ╚════════════════════════════════════════════════════════════════════════════╝
 
-setopt sharehistory
+# https://zsh.sourceforge.io/Doc/Release/Options.html
 
-# Add commands to history as they are entered, don't wait for shell to exit
-setopt INC_APPEND_HISTORY
-
-# Also remember command start time and duration
+# Remember command start time and duration
 setopt EXTENDED_HISTORY
 
-# Do not keep duplicate commands in history
+# Do not keep duplicate commands in history (remove the older one)
 setopt HIST_IGNORE_ALL_DUPS
 
 # Do not remember commands that start with a whitespace
 setopt HIST_IGNORE_SPACE
+
+# Do not remember lines that differ only in whitespace
+setopt HIST_REDUCE_BLANKS
 
 HISTFILE=~/.zsh_history
 HISTSIZE=100000
