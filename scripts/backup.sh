@@ -11,6 +11,7 @@ tar czvf /tmp/home_$(date -Idate).tar.gz \
   --exclude=**/cartinsight/* \
   --exclude=**/CacheStorage/* \
   --exclude=**/go/src/* \
+  --exlcude=**/go/pkg/* \
   --exclude=**/Cache/* \
   --exclude=**/.rustup/* \
   $HOME
