@@ -5,7 +5,7 @@ do
 done &
 
 # Set the wallpaper
-feh --bg-fill ~/images/wallpaper/002.*
+feh --bg-fill ~/photos/wallpaper/002.*
 
 # Use a low color temperature all day
 redshift -O 3700 -m randr
@@ -14,4 +14,4 @@ redshift -O 3700 -m randr
 dunst > /dev/null 2>&1 &
 
 # Start the window manager
-exec dwm
+exec dbus-launch dwm
