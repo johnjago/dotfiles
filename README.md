@@ -3,16 +3,16 @@
 I use the [Solarized](https://ethanschoonover.com/solarized/) color scheme for
 everything—it's wonderful.
 
-ThinkPad 13: Debian (soon to be Arch), zsh, nvim, [dwm](https://dwm.suckless.org/), [st](https://st.suckless.org/)
+ThinkPad 13 (2017): Debian, zsh, nvim, [dwm](https://dwm.suckless.org/), [st](https://st.suckless.org/)
 
 MacBook Air (2020): macOS, zsh, nvim, Amethyst, iTerm2
 
 ## Goals
 
-My tools are carefully chosen.
+My hardware, operating systems, and the tools that run on them are carefully
+chosen.
 
-- They must be **lightweight** since my current laptop(s) aren't the best, and
-- I tend to keep my devices for a long time.
+- They must be **lightweight** since I tend to keep my devices for a long time.
 - They must **maximize workflow** without getting in the way.
 - They must **use screen space efficiently** since I have small laptops and
   don't usually use a monitor, instead keeping the laptop on a stand with
@@ -24,10 +24,9 @@ My tools are carefully chosen.
 
 ## Non-goals
 
-- It should not be worthy of a photo shoot.
-- It should not be easy to customize, since I've gone down this rabbit hole
-  before, and now I'd rather just have something that fits my workflow and
-  gives me the freedom to focus on actual work.
+- Photo shoots
+- Changing the setup every few months. I prefer to have something that fits my
+  workflow and gives me the freedom to focus on bigger ideas.
 
 ## Screenshots
 
