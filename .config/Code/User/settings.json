@@ -1,6 +1,7 @@
 {
     "breadcrumbs.enabled": false,
     "diffEditor.ignoreTrimWhitespace": false,
+    "editor.inlineSuggest.enabled": true,
     "editor.insertSpaces": false,
     "editor.fontFamily": "'Source Code Pro', 'monospace', monospace, 'Droid Sans Fallback'",
     "editor.renderIndentGuides": false,
@@ -19,6 +20,7 @@
     "typescript.updateImportsOnFileMove.enabled": "always",
     "security.workspace.trust.untrustedFiles": "open",
     "update.mode": "manual",
+    "window.restoreWindows": "none",
     "window.titleBarStyle": "custom",
     "workbench.colorTheme": "Solarized Light",
     "workbench.editor.untitled.hint": "hidden",
@@ -97,4 +99,10 @@
         "zlib",
         "wordpress"
     ],
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
 }
