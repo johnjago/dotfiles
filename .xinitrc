@@ -8,7 +8,7 @@ done &
 feh --bg-fill ~/photos/wallpaper/002.*
 
 # Use a low color temperature all day
-redshift -O 3700 -m randr
+xsct 3700
 
 # Turn on the notification daemon
 dunst > /dev/null 2>&1 &

@@ -1,0 +1,3 @@
+[submodule "sct"]
+	path = sct
+	url = https://github.com/faf0/sct.git
