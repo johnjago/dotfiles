@@ -38,8 +38,8 @@ static const int resizehints = 0;    /* 1 means respect size hints in tiled resi
 static const Layout layouts[] = {
 	/* symbol     arrange function */
 	{ "[]=",      tile },    /* first entry is default */
-	{ "><>",      NULL },    /* no layout function means floating behavior */
 	{ "[M]",      monocle },
+	{ "><>",      NULL },    /* no layout function means floating behavior */
 };
 
 /* key definitions */
@@ -62,8 +62,8 @@ static const char *lockcmd[]  = { "slock", NULL };
 static const char *volupcmd[] = { "/bin/bash", "-c", "amixer -D default sset Master Playback 5%+; sh ~/.xsetroot.sh" };
 static const char *voldowncmd[] = { "/bin/bash", "-c", "amixer -D default sset Master Playback 5%-; sh ~/.xsetroot.sh" };
 static const char *volmutecmd[] = { "/bin/bash", "-c", "amixer -D default sset Master Playback 0%; sh ~/.xsetroot.sh" };
-static const char *brightnessupcmd[] = { "/bin/bash", "-c", "xbacklight -inc 5%; sh ~/.xsetroot.sh" };
-static const char *brightnessdowncmd[] = { "/bin/bash", "-c", "xbacklight -dec 5%; sh ~/.xsetroot.sh" };
+static const char *brightnessupcmd[] = { "/bin/bash", "-c", "xbacklight -inc 5; sh ~/.xsetroot.sh" };
+static const char *brightnessdowncmd[] = { "/bin/bash", "-c", "xbacklight -dec 5; sh ~/.xsetroot.sh" };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */

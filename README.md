@@ -3,7 +3,8 @@
 I use the [Solarized](https://ethanschoonover.com/solarized/) color scheme for
 everything—it's wonderful.
 
-ThinkPad 13 (2017): Debian, zsh, nvim, [dwm](https://dwm.suckless.org/), [st](https://st.suckless.org/)
+ThinkPad 13 (2017): Arch Linux, zsh, nvim, [dwm](https://dwm.suckless.org/),
+[st](https://st.suckless.org/)
 
 MacBook Air (2020): macOS, zsh, nvim, Amethyst, iTerm2
 
@@ -31,6 +32,8 @@ chosen.
 ## Screenshots
 
 ### Linux
+
+(New screenshots of Arch coming soon! It looks the same though.)
 
 The typeface in the terminal, status bar, and code editor is Source Code Pro.
 
