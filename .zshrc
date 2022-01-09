@@ -73,12 +73,6 @@ alias s='slock'
 alias d='docker'
 alias dc='docker-compose'
 
-# Show the battery status like this:
-#   state:               discharging
-#   time to empty:       5.8 hours
-#   percentage:          58%
-alias bat='upower -i $(upower -e | grep '/battery') | grep --color=never -E "state|to\ full|to\ empty|percentage"'
-
 # See [alias] section in .gitconfig
 for al in `git --list-cmds=alias`; do
     alias g$al="git $al"
@@ -88,7 +82,7 @@ done
 alias gac='git add -A && git commit -m'
 
 # ╔════════════════════════════════════════════════════════════════════════════╗
-# ║ For when it's more convenient                                              ║
+# ║ Functions for use in the terminal, for when it’s more convenient           ║
 # ╚════════════════════════════════════════════════════════════════════════════╝
 
 # Set audio volume. For example, `a 50` sets volume to 50%
@@ -98,5 +92,5 @@ function a() {
 
 # Set brightness. For example, `b 50` sets brightness to 50%
 function b() {
-  xbacklight -set "$1"%
+  xbacklight -set "$1"
 }
