@@ -2,6 +2,11 @@
 " Maintainer:   Romain Lafourcade (romainlafourcade@gmail.com)
 " Description:  Light Solarized, without the bullshit.
 
+" Note to self: This is actually the dark color scheme from
+" https://github.com/romainl/flattened, but the terminal color numbers (12,
+" etc.) match my solarized st patch. It seems like this color scheme assumes
+" the terminal is colored in solarized dark.
+
 hi clear
 
 if exists('syntax_on')
@@ -12,7 +17,7 @@ let colors_name = 'flattened_light'
 
 hi  Normal                                  ctermfg=12  ctermbg=8  guifg=#839496  guibg=#002b36  gui=NONE
 
-set background=dark
+set background=light
 
 hi  ColorColumn                             cterm=NONE  ctermbg=0  guibg=#073642  gui=NONE
 hi  Comment                                 cterm=NONE  ctermfg=10  guifg=#586e75  gui=italic
@@ -304,22 +309,3 @@ hi clear SyntasticWarningLine
 hi clear helpLeadBlank
 hi clear helpNormal
 hi clear pandocTableStructre
-
-if has('nvim')
-  let g:terminal_color_0  = '#073642'
-  let g:terminal_color_1  = '#dc322f'
-  let g:terminal_color_2  = '#859900'
-  let g:terminal_color_3  = '#b58900'
-  let g:terminal_color_4  = '#268bd2'
-  let g:terminal_color_5  = '#d33682'
-  let g:terminal_color_6  = '#2aa198'
-  let g:terminal_color_7  = '#eee8d5'
-  let g:terminal_color_8  = '#002b36'
-  let g:terminal_color_9  = '#cb4b16'
-  let g:terminal_color_10 = '#586e75'
-  let g:terminal_color_11 = '#657b83'
-  let g:terminal_color_12 = '#839496'
-  let g:terminal_color_13 = '#6c71c4'
-  let g:terminal_color_14 = '#93a1a1'
-  let g:terminal_color_15 = '#fdf6e3'
-endif
