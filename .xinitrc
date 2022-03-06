@@ -13,5 +13,8 @@ xsct 3700
 # Turn on the notification daemon
 dunst > /dev/null 2>&1 &
 
+# Move the ctrl key to the caps lock key
+setxkbmap -option "ctrl:nocaps"
+
 # Start the window manager
 exec dbus-launch dwm
