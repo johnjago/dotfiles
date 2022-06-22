@@ -12,9 +12,10 @@ MacBook Air (2020): macOS, zsh, nvim, Amethyst, iTerm2
 
 My setup is carefully chosen.
 
-- It's **lightweight**, both digitally, since I tend to keep my devices for a
+- It's **lightweight**, digitally, since I tend to keep my devices for a
   long time, and physically, since I travel often.
 - It **maximizes workflow** without getting in the way.
+- It **doesn't change often**, because I value high impact work over tinkering all day.
 - It **uses screen space efficiently** since I have small laptops and don't
   usually use a monitor, instead keeping the laptop on a stand with keyboard
   and mouse.
@@ -31,7 +32,7 @@ stock except for the following patches:
 - [fullgaps](https://dwm.suckless.org/patches/fullgaps/) - I added a shortcut to reset the gaps.
 - [solarized](https://github.com/johnjago/dotfiles/blob/main/dwm/patches/dwm-solarized-6.2.diff) - This is my own patch that changes a few colors, including dmenu colors, to match Solarized Light.
 - Font is set to Source Code Pro (though I could probably do this with fontconfig)
-- The tags numbers are in CJK characters
+- The tag numbers are in CJK characters
 - Firefox doesn't stick to the 9th tag
 - The default window split is 50/50 instead of 55/45
 - Monocle layout is second instead of third
