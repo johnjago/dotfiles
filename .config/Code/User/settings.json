@@ -1,9 +1,11 @@
 {
     "diffEditor.ignoreTrimWhitespace": false,
+    "debug.console.fontSize": 14,
     "editor.inlineSuggest.enabled": true,
     "editor.insertSpaces": false,
-    "editor.fontFamily": "'Source Code Pro', 'monospace', monospace, 'Droid Sans Fallback'",
-    "editor.renderIndentGuides": false,
+    "editor.fontFamily": "'Source Code Pro', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontSize": 14,
+    "editor.guides.indentation": false,
     "editor.renderWhitespace": "boundary",
     "editor.rulers": [
         80
@@ -16,6 +18,7 @@
     "go.toolsManagement.autoUpdate": true,
     "javascript.updateImportsOnFileMove.enabled": "always",
     "latex-workshop.view.pdf.viewer": "tab",
+    "terminal.integrated.fontSize": 14,
     "typescript.updateImportsOnFileMove.enabled": "always",
     "security.workspace.trust.untrustedFiles": "open",
     "update.mode": "manual",
