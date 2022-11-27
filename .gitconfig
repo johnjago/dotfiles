@@ -4,7 +4,7 @@
 	email = jc@johnjago.com
 	name = John Jago
 [core]
-	editor = vim
+	editor = nvim
 [alias]
 	l = log
 
