@@ -3,10 +3,14 @@
 I use the [Solarized](https://ethanschoonover.com/solarized/) color scheme for
 everything—it's wonderful.
 
-ThinkPad 13 (2017): Arch Linux, zsh, nvim, [dwm](https://dwm.suckless.org/),
-[st](https://st.suckless.org/)
+In late 2022 I switched to using macOS only, for reasons I will explain in an
+upcoming blog post. The Linux parts of these dotfiles will remain since they
+still work well.
 
 MacBook Air (2020): macOS, zsh, nvim, Amethyst, iTerm2
+
+ThinkPad 13 (2017): Arch Linux, zsh, nvim, [dwm](https://dwm.suckless.org/),
+[st](https://st.suckless.org/)
 
 ## Goals
 
