@@ -56,13 +56,10 @@ setopt interactivecomments
 
 alias ..='cd ..'
 alias ...='cd ../../'
-alias blog='cd ~/code/johnjago.com/src/blog'
-alias dl='cd ~/downloads'
-alias notes='cd ~/documents/notes'
 alias l='ls'
-alias ls='ls -CF --color=auto --group-directories-first'
-alias la='ls --almost-all'
-alias ll='ls --almost-all -l --human-readable'
+alias ls='ls -CF --color=auto'
+alias la='ls -A'
+alias ll='ls -Ahl'
 alias h='history'
 alias g='grep'
 alias c='clear'
@@ -73,6 +70,11 @@ alias s='slock'
 alias d='docker'
 alias dc='docker-compose'
 
+alias doc='cd ~/Documents'
+alias dl='cd ~/Downloads'
+alias blog='cd ~/code/johnjago.com/src/blog'
+alias notes='cd ~/Documents/notes'
+
 # See [alias] section in .gitconfig
 for al in `git --list-cmds=alias`; do
     alias g$al="git $al"
@@ -80,17 +82,3 @@ done
 
 # Stage and commit all files (modified, deleted, and untracked)
 alias gac='git add -A && git commit -m'
-
-# ╔════════════════════════════════════════════════════════════════════════════╗
-# ║ Functions for use in the terminal, for when it’s more convenient           ║
-# ╚════════════════════════════════════════════════════════════════════════════╝
-
-# Set audio volume. For example, `a 50` sets volume to 50%
-function a() {
-  amixer set Master "$1"%
-}
-
-# Set brightness. For example, `b 50` sets brightness to 50%
-function b() {
-  xbacklight -set "$1"
-}
