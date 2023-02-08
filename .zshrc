@@ -39,6 +39,9 @@ SAVEHIST=100000
 # ║ General                                                                    ║
 # ╚════════════════════════════════════════════════════════════════════════════╝
 
+# cd if just typing directory name (in current directory)
+setopt autocd
+
 # Correct spelling of all arguments in the command line
 setopt CORRECT_ALL
 
@@ -54,8 +57,6 @@ setopt interactivecomments
 # ║ Aliases                                                                    ║
 # ╚════════════════════════════════════════════════════════════════════════════╝
 
-alias ..='cd ..'
-alias ...='cd ../../'
 alias l='ls'
 alias ls='ls -CF --color=auto'
 alias la='ls -A'
@@ -67,14 +68,17 @@ alias e='exit'
 alias vim='nvim'
 alias v='nvim'
 alias r='ranger'
-alias s='slock'
 alias d='docker'
-alias dc='docker-compose'
+alias dc='docker compose'
 
-alias doc='cd ~/Documents'
+alias ..='cd ..'
+alias ...='cd ../../'
 alias dl='cd ~/Downloads'
-alias blog='cd ~/code/johnjago.com/src/blog'
-alias notes='cd ~/Documents/notes'
+alias doc='cd ~/Documents'
+alias n='cd ~/Documents/notes'
+alias j='cd ~/code/johnjago.com'
+alias b='cd ~/code/johnjago.com/src/blog'
+alias u=' cd ~/code/undo.studio'
 
 # See [alias] section in .gitconfig
 for al in `git --list-cmds=alias`; do

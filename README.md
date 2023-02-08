@@ -3,9 +3,9 @@
 I use the [Solarized](https://ethanschoonover.com/solarized/) color scheme for
 everything—it's wonderful.
 
-In late 2022 I switched to using macOS only, for reasons I will explain in an
-upcoming blog post. The Linux parts of these dotfiles will remain since they
-still work well.
+In late 2022, I switched to using macOS only. The Linux config remains here
+because it still works well, but I have adjusted some files to assume BSD
+utilities instead of the GNU ones found in most Linux distributions.
 
 MacBook Air (2020): macOS, zsh, nvim, Amethyst, iTerm2
 
@@ -19,7 +19,8 @@ My setup is carefully chosen.
 - It's **lightweight**, digitally, since I tend to keep my devices for a
   long time, and physically, since I travel often.
 - It **maximizes workflow** without getting in the way.
-- It **doesn't change often**, because I value high impact work over tinkering all day.
+- It **doesn't change often**, because I value high impact work over tinkering
+  all day.
 - It **uses screen space efficiently** since I have small laptops and don't
   usually use a monitor, instead keeping the laptop on a stand with keyboard
   and mouse.
@@ -33,9 +34,13 @@ My setup is carefully chosen.
 For my Linux machine, I use a tiling window manager called dwm. It's mostly
 stock except for the following patches:
 
-- [fullgaps](https://dwm.suckless.org/patches/fullgaps/) - I added a shortcut to reset the gaps.
-- [solarized](https://github.com/johnjago/dotfiles/blob/main/dwm/patches/dwm-solarized-6.2.diff) - This is my own patch that changes a few colors, including dmenu colors, to match Solarized Light.
-- Font is set to Source Code Pro (though I could probably do this with fontconfig)
+- [fullgaps](https://dwm.suckless.org/patches/fullgaps/) - I added a shortcut
+  to reset the gaps.
+- [solarized](https://github.com/johnjago/dotfiles/blob/main/dwm/patches/dwm-solarized-6.2.diff)
+  - This is my own patch that changes a few colors, including dmenu colors, to
+	match Solarized Light.
+- Font is set to Source Code Pro (though I could probably do this with
+  fontconfig)
 - The tag numbers are in CJK characters
 - Firefox doesn't stick to the 9th tag
 - The default window split is 50/50 instead of 55/45
@@ -52,8 +57,8 @@ The typeface in the terminal, status bar, and code editor is Source Code Pro.
 
 ![](screenshots/linux-1.png)
 
-I don't typically use gaps if not using an external monitor. I just did it for
-the screenshots.
+I don't use gaps if not using an external monitor. I just did it for the
+screenshots.
 
 ![](screenshots/linux-2.png)
 
