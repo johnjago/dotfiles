@@ -34,11 +34,11 @@ My setup is carefully chosen.
 For my Linux machine, I use a tiling window manager called dwm. It's mostly
 stock except for the following patches:
 
-- [fullgaps](https://dwm.suckless.org/patches/fullgaps/) - I added a shortcut
-  to reset the gaps.
+- [fullgaps](https://dwm.suckless.org/patches/fullgaps/)
+  - I added a shortcut to reset the gaps
 - [solarized](https://github.com/johnjago/dotfiles/blob/main/dwm/patches/dwm-solarized-6.2.diff)
   - This is my own patch that changes a few colors, including dmenu colors, to
-	match Solarized Light.
+    match Solarized Light
 - Font is set to Source Code Pro (though I could probably do this with
   fontconfig)
 - The tag numbers are in CJK characters
