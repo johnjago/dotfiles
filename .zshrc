@@ -57,7 +57,7 @@ setopt interactivecomments
 # ║ Aliases                                                                    ║
 # ╚════════════════════════════════════════════════════════════════════════════╝
 
-alias l='ls'
+alias l='ls -l'
 alias ls='ls -CF --color=auto'
 alias la='ls -A'
 alias ll='ls -Ahl'
@@ -74,8 +74,9 @@ alias dc='docker compose'
 alias ..='cd ..'
 alias ...='cd ../../'
 alias dl='cd ~/Downloads'
-alias doc='cd ~/Documents'
+alias ds='cd ~/Documents'
 alias n='cd ~/Documents/notes'
+alias co='cd ~/code'
 alias j='cd ~/code/johnjago.com'
 alias b='cd ~/code/johnjago.com/src/blog'
 alias u=' cd ~/code/undo.studio'
