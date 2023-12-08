@@ -69,6 +69,7 @@ alias v='nvim'
 alias r='ranger'
 alias d='docker'
 alias dc='docker compose'
+alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
 
 alias ..='cd ..'
 alias ...='cd ../../'
