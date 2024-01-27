@@ -1,6 +1,8 @@
 [push]
 	default = simple
 	autoSetupRemote = true
+[pull]
+	rebase = false
 [user]
 	email = jc@johnjago.com
 	name = John Jago
