@@ -57,10 +57,12 @@ setopt interactivecomments
 # ║ Aliases                                                                    ║
 # ╚════════════════════════════════════════════════════════════════════════════╝
 
-alias l='ls -l'
-alias ls='ls -CF --color=auto'
+# F to show file type, G to colour output
+alias ls='ls -FG'
+# A to show hidden files
 alias la='ls -A'
-alias ll='ls -Ahl'
+# h to use human-readable file sizes, l for detailed list, t to sort by modified time, r to reverse it so that newest files are at the bottom closest to the prompt
+alias ll='ls -Ahltr'
 alias h='history'
 alias g='grep'
 alias vim='nvim'
