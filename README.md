@@ -49,6 +49,8 @@ stock except for the following patches:
   audio (alt + up/down) without having to reach for the multimedia keys
 - Keyboard shortcut for locking the screen with slock ("Windows" key + l)
 
+If you’re new to dwm, [Dave's Visual Guide to dwm](https://ratfactor.com/dwm) is a great reference.
+
 ## Screenshots
 
 ### Linux
@@ -67,3 +69,8 @@ screenshots.
 ![](screenshots/mac-1.png)
 
 ![](screenshots/mac-2.png)
+
+## Resources
+
+- The [ArchWiki](https://wiki.archlinux.org/title/Table_of_contents) is an invaluable reference for all Linux distros, not just Arch.
+- Vim is something you’ll encounter a lot in Linux, but it can be confusing. [This is my favourite cheatsheet](https://vim.rtorr.com/).
