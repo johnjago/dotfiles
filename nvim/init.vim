@@ -1,7 +1,15 @@
 set nocompatible            " do not use vi defaults
 syntax on                   " syntax highlighting
 
-colorscheme flattened_light " solarized light
+""" plugins
+
+call plug#begin()
+Plug 'shaunsingh/solarized.nvim'
+call plug#end()
+
+""" colors
+
+colorscheme solarized
 
 """ indents
 
