@@ -59,6 +59,7 @@ setopt interactivecomments
 
 # F to show file type, G to colour output
 alias ls='ls -FG'
+alias l='ls'
 # A to show hidden files
 alias la='ls -A'
 # h to use human-readable file sizes, l for detailed list, t to sort by modified time, r to reverse it so that newest files are at the bottom closest to the prompt
