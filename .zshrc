@@ -64,6 +64,7 @@ alias l='ls'
 alias la='ls -A'
 # h to use human-readable file sizes, l for detailed list, t to sort by modified time, r to reverse it so that newest files are at the bottom closest to the prompt
 alias ll='ls -Ahltr'
+alias dt="date +'%Y-%m-%d %H:%M:%S %Z' | tr -d '\n' | pbcopy"
 alias h='history'
 alias g='grep'
 alias vim='nvim'
