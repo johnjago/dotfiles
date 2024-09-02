@@ -76,11 +76,7 @@ alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
 alias ..='cd ..'
 alias ...='cd ../../'
 alias dl='cd ~/Downloads'
-alias ds='cd ~/Documents'
-alias n='cd ~/Documents/notes'
-alias co='cd ~/code'
 alias j='cd ~/code/johnjago.com'
-alias u=' cd ~/code/undo.studio'
 
 # See [alias] section in .gitconfig
 for al in `git --list-cmds=alias`; do
