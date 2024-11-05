@@ -3,18 +3,22 @@
 I use the [Solarized](https://ethanschoonover.com/solarized/) color scheme for
 everything—it’s wonderful.
 
-In late 2022, I switched to using macOS only. The Linux config remains here
-because it still works well, but I have adjusted some files to assume BSD
-utilities instead of the GNU ones found in most Linux distributions.
+In late 2022, I switched to using macOS only. The Linux config remains here,
+but I have adjusted some files to assume BSD utilities instead of the GNU
+ones found in most Linux distributions.
 
 MacBook Air (2020): macOS, zsh, nvim, Amethyst, iTerm2
 
 ThinkPad 13 (2017): Arch Linux, zsh, nvim, [dwm](https://dwm.suckless.org/),
 [st](https://st.suckless.org/)
 
+\* * *
+
 > Tools should be ambient. It disappears and flows through your actions. You
 > should never need it because it’s always at your hands. You should never
-> ignore it because it’s never in your way. —[Hunor Karamán](https://hex22.org/wiki/manifesto/)
+> ignore it because it’s never in your way.
+
+— [Hunor Karamán](https://archive.hex22.org/wiki/manifesto/)
 
 ## dwm
 
