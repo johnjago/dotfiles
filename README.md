@@ -9,8 +9,6 @@ MacBook Air (2020): macOS, zsh, nvim, Amethyst, iTerm2
 ThinkPad 13 (2017): Arch Linux, zsh, nvim, [dwm](https://dwm.suckless.org/),
 [st](https://st.suckless.org/)
 
-\* * *
-
 > A tool should be ambient. It disappears and flows through your actions. You
 > should never need it because it’s always at your hands. You should never
 > ignore it because it’s never in your way.
