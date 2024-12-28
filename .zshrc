@@ -2,20 +2,19 @@ autoload -U compinit colors vcs_info
 colors
 compinit
 
-# ╔════════════════════════════════════════════════════════════════════════════╗
-# ║ Prompt                                                                     ║
-# ╚════════════════════════════════════════════════════════════════════════════╝
+#
+# Prompt
+#
 
 parse_git_branch() {
 	git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
-
 setopt PROMPT_SUBST
 PROMPT='%B%F{blue}%9c%f%F{yellow}$(parse_git_branch)%f%b '
 
-# ╔════════════════════════════════════════════════════════════════════════════╗
-# ║ History                                                                    ║
-# ╚════════════════════════════════════════════════════════════════════════════╝
+#
+# History
+#
 
 # https://zsh.sourceforge.io/Doc/Release/Options.html
 
@@ -35,14 +34,14 @@ HISTFILE=~/.zsh_history
 HISTSIZE=100000
 SAVEHIST=100000
 
-# ╔════════════════════════════════════════════════════════════════════════════╗
-# ║ General                                                                    ║
-# ╚════════════════════════════════════════════════════════════════════════════╝
+#
+# General
+#
 
 # cd if just typing directory name (in current directory)
 setopt autocd
 
-# Correct spelling of all arguments in the command line
+# Correct spelling of arguments in the command line
 setopt CORRECT_ALL
 
 # Enable autocompletion
@@ -53,9 +52,9 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 # Support commands with # comments at the end
 setopt interactivecomments
 
-# ╔════════════════════════════════════════════════════════════════════════════╗
-# ║ Aliases                                                                    ║
-# ╚════════════════════════════════════════════════════════════════════════════╝
+#
+# Aliases
+#
 
 # F to show file type, G to colour output
 alias ls='ls -FG'
@@ -73,7 +72,6 @@ alias r='ranger'
 alias d='docker'
 alias dc='docker compose'
 alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
-
 alias ..='cd ..'
 alias ...='cd ../../'
 alias dl='cd ~/Downloads'
@@ -85,4 +83,4 @@ for al in `git --list-cmds=alias`; do
 done
 
 # Stage and commit all files (modified, deleted, and untracked)
-alias gac='git add -A && git commit -m'
+alias gac='git add -A && git commit'
