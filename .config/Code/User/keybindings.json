@@ -1,32 +1,88 @@
 [
-     {
-          "key": "cmd+shift+j",
-          "command": "workbench.action.terminal.focusNext"
-     },
-     {
-          "key": "cmd+shift+k",
-          "command": "workbench.action.terminal.focusPrevious"
-     },
-     {
-          "key": "ctrl+`",
-          "command": "workbench.action.closePanel"
-     },
-     {
-          "key": "ctrl+`",
-          "command": "workbench.action.toggleMaximizedPanel",
-          "when": "!terminalFocus"
-     },
-     {
-          "key": "ctrl+'",
-          "command": "workbench.action.navigateForward"
-     },
-     {
-          "key": "ctrl+;",
-          "command": "workbench.action.navigateBack"
-     },
-     {
-          "key": "ctrl+w",
-          "command": "workbench.action.closeWindow",
-          "when": "!editorIsOpen && !multipleEditorGroups"
-     }
+	{
+		"key": "cmd+shift+j",
+		"command": "workbench.action.terminal.focusNext"
+	},
+	{
+		"key": "cmd+shift+k",
+		"command": "workbench.action.terminal.focusPrevious"
+	},
+	{
+		"key": "ctrl+`",
+		"command": "workbench.action.closePanel"
+	},
+	{
+		"key": "ctrl+`",
+		"command": "workbench.action.toggleMaximizedPanel",
+		"when": "!terminalFocus"
+	},
+	{
+		"key": "cmd+]",
+		"command": "workbench.action.navigateForward"
+	},
+	{
+		"key": "cmd+[",
+		"command": "workbench.action.navigateBack"
+	},
+	{
+		"key": "ctrl+w",
+		"command": "workbench.action.closeWindow",
+		"when": "!editorIsOpen && !multipleEditorGroups"
+	},
+	{
+		"key": "ctrl+tab",
+		"command": "workbench.action.nextEditor"
+	},
+	{
+		"key": "alt+cmd+right",
+		"command": "-workbench.action.nextEditor"
+	},
+	{
+		"key": "ctrl+shift+tab",
+		"command": "workbench.action.previousEditor"
+	},
+	{
+		"key": "alt+cmd+left",
+		"command": "-workbench.action.previousEditor"
+	},
+	{
+		"key": "ctrl+]",
+		"command": "editor.action.indentLines",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "cmd+]",
+		"command": "-editor.action.indentLines",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+[",
+		"command": "editor.action.outdentLines",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "cmd+[",
+		"command": "-editor.action.outdentLines",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "shift shift",
+		"command": "workbench.action.quickOpen"
+	},
+	{
+		"key": "cmd+/",
+		"command": "runCommands",
+		"args": {
+			"commands": [
+				{
+					"command": "editor.action.commentLine"
+				},
+				{
+					"command": "cursorMove",
+					"args": { "by": "line", "to": "down" }
+				}
+			]
+		},
+		"when": "editorTextFocus"
+	}
 ]
