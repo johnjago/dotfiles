@@ -8,15 +8,6 @@
 		"command": "workbench.action.terminal.focusPrevious"
 	},
 	{
-		"key": "ctrl+`",
-		"command": "workbench.action.closePanel"
-	},
-	{
-		"key": "ctrl+`",
-		"command": "workbench.action.toggleMaximizedPanel",
-		"when": "!terminalFocus"
-	},
-	{
 		"key": "cmd+]",
 		"command": "workbench.action.navigateForward"
 	},
