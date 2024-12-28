@@ -1,32 +1,25 @@
 {
-    "diffEditor.ignoreTrimWhitespace": false,
-    "debug.console.fontSize": 14,
-    "editor.inlineSuggest.enabled": true,
-    "editor.insertSpaces": false,
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
     "editor.fontFamily": "'Source Code Pro', Menlo, Monaco, 'Courier New', monospace",
-    "editor.fontSize": 14,
+    "editor.fontSize": 13,
     "editor.guides.indentation": false,
+    "editor.insertSpaces": false,
     "editor.renderWhitespace": "boundary",
     "editor.rulers": [
         80
     ],
+    "editor.stickyScroll.enabled": true,
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
     "extensions.ignoreRecommendations": true,
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
-    "go.toolsManagement.autoUpdate": true,
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "latex-workshop.view.pdf.viewer": "tab",
-    "terminal.integrated.fontSize": 14,
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "security.workspace.trust.untrustedFiles": "open",
-    "update.mode": "manual",
-    "window.restoreWindows": "none",
-    "window.titleBarStyle": "custom",
-    "workbench.colorTheme": "Solarized Light",
-    "workbench.editor.untitled.hint": "hidden",
-    "workbench.startupEditor": "newUntitledFile",
+    "html.autoClosingTags": false,
     "intelephense.stubs": [
         "apache",
         "bcmath",
@@ -101,10 +94,14 @@
         "zlib",
         "wordpress"
     ],
-    "[json]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
-    },
-    "[javascript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
-    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "security.workspace.trust.untrustedFiles": "open",
+    "terminal.integrated.fontSize": 13,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "update.mode": "manual",
+    "vim.smartRelativeLine": true,
+    "window.zoomLevel": 1,
+    "workbench.colorTheme": "Solarized Light",
+    "workbench.editor.empty.hint": "hidden",
+    "workbench.startupEditor": "newUntitledFile"
 }
