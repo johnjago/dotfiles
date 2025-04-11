@@ -19,6 +19,8 @@
 
 	s = status
 	a = add -A
+	r = restore
+	rs = restore --staged
 	c = commit
 	cm = commit -m
 	m = commit --amend --verbose
@@ -30,7 +32,6 @@
 	co = checkout
 	cob = checkout -b
 	t = tag
-	su = submodule update --remote --merge
 
 	# List branches sorted by last modified
 	b = "!git for-each-ref --sort='-authordate' --format='%(authordate)%09%(objectname:short)%09%(refname)' refs/heads | sed -e 's-refs/heads/--'"
