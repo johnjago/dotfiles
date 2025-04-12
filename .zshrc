@@ -56,26 +56,35 @@ setopt interactivecomments
 # Aliases
 #
 
+# Navigation
+
+alias ..='cd ..'
+alias ...='cd ../../'
 # F to show file type, G to colour output
 alias ls='ls -FG'
 alias l='ls'
 # A to show hidden files
 alias la='ls -A'
-# h to use human-readable file sizes, l for detailed list, t to sort by modified time, r to reverse it so that newest files are at the bottom closest to the prompt
+# h to use human-readable file sizes, l for detailed list, t to sort by
+# modified time, r to reverse it so that newest files are at the bottom closest
+# to the prompt.
 alias ll='ls -Ahltr'
-alias dt="date +'%Y-%m-%d %H:%M:%S %Z' | tr -d '\n' | pbcopy"
-alias h='history'
-alias g='grep'
+alias dl='cd ~/Downloads'
+alias j='cd ~/code/johnjago.com'
+
+# Utilities
+
 alias vim='nvim'
 alias v='nvim'
 alias r='ranger'
+alias dt="date +'%Y-%m-%d %H:%M:%S %Z' | tr -d '\n' | pbcopy"
+
+# Development
+
 alias d='docker'
 alias dc='docker compose'
+alias c='composer'
 alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
-alias ..='cd ..'
-alias ...='cd ../../'
-alias dl='cd ~/Downloads'
-alias j='cd ~/code/johnjago.com'
 
 # See [alias] section in .gitconfig
 for al in `git --list-cmds=alias`; do
