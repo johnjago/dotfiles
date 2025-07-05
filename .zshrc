@@ -70,9 +70,9 @@ alias dc='docker compose'
 alias c='composer'
 alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
 
-# See [alias] section in .gitconfig
-for al in `git --list-cmds=alias`; do
-    alias g$al="git $al"
+# See [alias] section in ~/.gitconfig
+for a in `git --list-cmds=alias`; do
+    alias g$a="git $a"
 done
 
 # Stage and commit all files (modified, deleted, and untracked).
