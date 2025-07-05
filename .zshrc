@@ -4,12 +4,12 @@
 # Prompt
 #
 
-parse_git_branch() {
+current_git_branch() {
 	git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 setopt PROMPT_SUBST
 # %9c means show up to the last 9 components of the current directory.
-PROMPT='%B%F{blue}%9c%f%F{yellow}$(parse_git_branch)%f%b '
+PROMPT='%B%F{blue}%9c%f%F{yellow}$(current_git_branch)%f%b '
 
 #
 # Completions
