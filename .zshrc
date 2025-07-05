@@ -1,3 +1,5 @@
+# All options: https://zsh.sourceforge.io/Doc/Release/Options.html
+
 #
 # Prompt
 #
@@ -20,23 +22,17 @@ zstyle ':completion:*' completer _complete _correct _approximate
 # History
 #
 
-# https://zsh.sourceforge.io/Doc/Release/Options.html
-
-# Remember command start time and duration
-setopt EXTENDED_HISTORY
-
-# Do not keep duplicate commands in history (remove the older one)
-setopt HIST_IGNORE_ALL_DUPS
-
-# Do not remember commands that start with a whitespace
-setopt HIST_IGNORE_SPACE
-
-# Do not remember lines that differ only in whitespace
-setopt HIST_REDUCE_BLANKS
-
 HISTFILE=~/.zsh_history
 HISTSIZE=100000
 SAVEHIST=100000
+
+# Include a timestamp and duration in seconds with each command.
+setopt EXTENDED_HISTORY
+
+# Do not enter commands into the history list if they are duplicates of the
+# previous command. This is helpful when using the up arrow to go through
+# recent history.
+setopt HIST_IGNORE_DUPS
 
 #
 # General
