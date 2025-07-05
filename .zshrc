@@ -41,22 +41,20 @@ setopt HIST_IGNORE_DUPS
 
 # Navigation
 
-# cd if just typing directory name (in current directory)
-setopt autocd
+# cd if just typing directory name.
+setopt AUTO_CD
 
 alias ..='cd ..'
 alias ...='cd ../../'
-# F to show file type, G to colour output
+# F to show file type, G to colour output.
 alias ls='ls -FG'
 alias l='ls'
-# A to show hidden files
+# A to show hidden files.
 alias la='ls -A'
 # h to use human-readable file sizes, l for detailed list, t to sort by
 # modified time, r to reverse it so that newest files are at the bottom closest
 # to the prompt.
 alias ll='ls -Ahltr'
-alias dl='cd ~/Downloads'
-alias j='cd ~/code/johnjago.com'
 
 # Utilities
 
@@ -77,7 +75,7 @@ for al in `git --list-cmds=alias`; do
     alias g$al="git $al"
 done
 
-# Stage and commit all files (modified, deleted, and untracked)
+# Stage and commit all files (modified, deleted, and untracked).
 alias gac='git add -A && git commit'
 
 #
