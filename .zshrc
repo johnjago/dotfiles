@@ -17,6 +17,7 @@ PROMPT='%B%F{blue}%9c%f%F{yellow}$(parse_git_branch)%f%b '
 
 autoload -U compinit && compinit
 zstyle ':completion:*' completer _complete _correct _approximate
+setopt CORRECT_ALL
 
 #
 # History
@@ -35,23 +36,13 @@ setopt EXTENDED_HISTORY
 setopt HIST_IGNORE_DUPS
 
 #
-# General
-#
-
-# cd if just typing directory name (in current directory)
-setopt autocd
-
-# Correct spelling of arguments in the command line
-setopt CORRECT_ALL
-
-# Support commands with # comments at the end
-setopt interactivecomments
-
-#
 # Aliases
 #
 
 # Navigation
+
+# cd if just typing directory name (in current directory)
+setopt autocd
 
 alias ..='cd ..'
 alias ...='cd ../../'
@@ -88,3 +79,10 @@ done
 
 # Stage and commit all files (modified, deleted, and untracked)
 alias gac='git add -A && git commit'
+
+#
+# Other
+#
+
+# Allow commands with # comments at the end.
+setopt INTERACTIVE_COMMENTS
