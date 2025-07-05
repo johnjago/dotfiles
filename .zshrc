@@ -1,6 +1,3 @@
-autoload -U compinit
-compinit
-
 #
 # Prompt
 #
@@ -11,6 +8,13 @@ parse_git_branch() {
 setopt PROMPT_SUBST
 # %9c means show up to the last 9 components of the current directory.
 PROMPT='%B%F{blue}%9c%f%F{yellow}$(parse_git_branch)%f%b '
+
+#
+# Completions
+#
+
+autoload -U compinit && compinit
+zstyle ':completion:*' completer _complete _correct _approximate
 
 #
 # History
@@ -43,11 +47,6 @@ setopt autocd
 
 # Correct spelling of arguments in the command line
 setopt CORRECT_ALL
-
-# Enable autocompletion
-zstyle ':completion:*' completer _complete _correct _approximate 
-zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
-zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
 # Support commands with # comments at the end
 setopt interactivecomments
