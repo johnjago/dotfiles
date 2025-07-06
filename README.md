@@ -1,21 +1,41 @@
 # dotfiles
 
-In late 2022, I switched to using macOS only. The Linux config remains here,
-but I have adjusted some files to assume BSD utilities instead of the GNU
-ones found in most Linux distributions.
-
 MacBook Air (2020): macOS, zsh, nvim, Amethyst, iTerm2
 
-ThinkPad 13 (2017): Arch Linux, zsh, nvim, [dwm](https://dwm.suckless.org/),
-[st](https://st.suckless.org/)
+In late 2022, I switched to macOS only, after nearly a decade of Linux.
+
+The files relevant to my setup today:
+
+- [.zshrc](.zshrc)
+- [nvim/init.vim](nvim/init.vim)
+- [vscode/](vscode/)
+- [.gitconfig](.gitconfig)
+
+The Linux config remains, but for those files now used in macOS, I have
+adjusted them to use BSD utilities instead of the GNU ones found in
+most Linux distributions.
+
+![Screenshot of my Mac’s desktop as of 2025, showcasing the wallpaper and a single terminal window with the output of neofetch.](screenshots/mac-2025.png)
 
 > A tool should be ambient. It disappears and flows through your actions. You
 > should never need it because it’s always at your hands. You should never
 > ignore it because it’s never in your way.
 
-— [Hunor Karamán](https://archive.hex22.org/wiki/manifesto/)
+—[Hunor Karamán](https://archive.hex22.org/wiki/manifesto/)
 
-## dwm
+## Resources
+
+- The [ArchWiki](https://wiki.archlinux.org/title/Table_of_contents) is an
+  invaluable reference for all Linux distros, not just Arch.
+- Vim is something you’ll encounter a lot in Linux, but it can be confusing.
+  [This is my favourite cheatsheet](https://vim.rtorr.com/).
+
+## Previous setups
+
+ThinkPad 13 (2017): Arch Linux, zsh, nvim, [dwm](https://dwm.suckless.org/),
+[st](https://st.suckless.org/), [dmenu](https://tools.suckless.org/dmenu/), [slock](https://tools.suckless.org/slock/), [sct](https://github.com/faf0/sct)
+
+### dwm
 
 For my Linux machine, I use a tiling window manager called dwm. It’s mostly
 stock except for the following patches:
@@ -38,12 +58,12 @@ stock except for the following patches:
 If you’re new to dwm, [Dave's Visual Guide to dwm](https://ratfactor.com/dwm)
 is a great reference.
 
-## Screenshots
+### Screenshots
 
 I’m a big fan of the [Solarized](https://ethanschoonover.com/solarized/) color
 scheme.
 
-### Linux
+#### Linux
 
 The typeface in the terminal, status bar, and code editor is Source Code Pro.
 
@@ -51,15 +71,8 @@ The typeface in the terminal, status bar, and code editor is Source Code Pro.
 
 ![](screenshots/linux-2.png)
 
-### Mac
+#### Mac (old setup)
 
 ![](screenshots/mac-1.png)
 
 ![](screenshots/mac-2.png)
-
-## Resources
-
-- The [ArchWiki](https://wiki.archlinux.org/title/Table_of_contents) is an
-  invaluable reference for all Linux distros, not just Arch.
-- Vim is something you’ll encounter a lot in Linux, but it can be confusing.
-  [This is my favourite cheatsheet](https://vim.rtorr.com/).
