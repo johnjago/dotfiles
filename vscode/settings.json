@@ -103,5 +103,6 @@
 	"window.zoomLevel": 1,
 	"workbench.colorTheme": "Solarized Light",
 	"workbench.editor.empty.hint": "hidden",
-	"workbench.startupEditor": "newUntitledFile"
+	"workbench.startupEditor": "newUntitledFile",
+	"chat.commandCenter.enabled": false
 }
