@@ -26,6 +26,7 @@ autocmd FileType go setlocal noexpandtab shiftwidth=4 softtabstop=4
 """ editor
 
 set number                  " line numbers
+set relativenumber          " show relative line numbers
 set ruler                   " cursor line and column in the status bar
 set colorcolumn=80          " show a vertical ruler
 set laststatus=2            " show status bar
