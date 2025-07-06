@@ -1,13 +1,5 @@
 [
 	{
-		"key": "cmd+shift+j",
-		"command": "workbench.action.terminal.focusNext"
-	},
-	{
-		"key": "cmd+shift+k",
-		"command": "workbench.action.terminal.focusPrevious"
-	},
-	{
 		"key": "cmd+]",
 		"command": "workbench.action.navigateForward"
 	},
@@ -16,25 +8,30 @@
 		"command": "workbench.action.navigateBack"
 	},
 	{
-		"key": "ctrl+w",
-		"command": "workbench.action.closeWindow",
-		"when": "!editorIsOpen && !multipleEditorGroups"
-	},
-	{
 		"key": "ctrl+tab",
 		"command": "workbench.action.nextEditor"
-	},
-	{
-		"key": "alt+cmd+right",
-		"command": "-workbench.action.nextEditor"
 	},
 	{
 		"key": "ctrl+shift+tab",
 		"command": "workbench.action.previousEditor"
 	},
+	// ctrl+w will close the window if no tabs are open.
 	{
-		"key": "alt+cmd+left",
-		"command": "-workbench.action.previousEditor"
+		"key": "ctrl+w",
+		"command": "workbench.action.closeWindow",
+		"when": "!editorIsOpen && !multipleEditorGroups"
+	},
+	{
+		"key": "shift shift",
+		"command": "workbench.action.quickOpen"
+	},
+	{
+		"key": "cmd+shift+j",
+		"command": "workbench.action.terminal.focusNext"
+	},
+	{
+		"key": "cmd+shift+k",
+		"command": "workbench.action.terminal.focusPrevious"
 	},
 	{
 		"key": "ctrl+]",
@@ -42,24 +39,13 @@
 		"when": "editorTextFocus && !editorReadonly"
 	},
 	{
-		"key": "cmd+]",
-		"command": "-editor.action.indentLines",
-		"when": "editorTextFocus && !editorReadonly"
-	},
-	{
 		"key": "ctrl+[",
 		"command": "editor.action.outdentLines",
 		"when": "editorTextFocus && !editorReadonly"
 	},
-	{
-		"key": "cmd+[",
-		"command": "-editor.action.outdentLines",
-		"when": "editorTextFocus && !editorReadonly"
-	},
-	{
-		"key": "shift shift",
-		"command": "workbench.action.quickOpen"
-	},
+	// IntelliJ style commenting where it moves to the next line after using
+	// the comment out line shortcut. This allows for quick commenting out of a
+	// succession of lines.
 	{
 		"key": "cmd+/",
 		"command": "runCommands",
@@ -70,7 +56,10 @@
 				},
 				{
 					"command": "cursorMove",
-					"args": { "by": "line", "to": "down" }
+					"args": {
+						"by": "line",
+						"to": "down"
+					}
 				}
 			]
 		},
