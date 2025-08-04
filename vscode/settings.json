@@ -24,5 +24,7 @@
 	"window.zoomLevel": 1,
 	"workbench.colorTheme": "Solarized Light",
 	"workbench.editor.empty.hint": "hidden",
+	"workbench.layoutControl.enabled": false,
+	"workbench.navigationControl.enabled": false,
 	"workbench.startupEditor": "newUntitledFile",
 }
