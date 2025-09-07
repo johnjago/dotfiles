@@ -23,7 +23,7 @@
 	rs = restore --staged
 	c = commit
 	cm = commit -m
-	m = commit --amend --verbose
+	ca = commit --amend --verbose
 	p = push
 	pt = push --tags
 	pu = pull
