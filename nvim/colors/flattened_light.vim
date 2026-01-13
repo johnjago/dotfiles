@@ -1,6 +1,9 @@
 " 'flattened_light.vim' -- Vim color scheme.
 " Maintainer:   Romain Lafourcade (romainlafourcade@gmail.com)
 " Description:  Light Solarized, without the bullshit.
+"
+" Note from John: this worked well when I used Arch Linux, but now that I’m
+" using macOS, I found shaunsingh/solarized.nvim as a better alternative.
 
 hi clear
 
