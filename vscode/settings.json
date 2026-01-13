@@ -1,5 +1,6 @@
 {
 	"chat.commandCenter.enabled": false,
+	"chat.disableAIFeatures": true,
 	"editor.fontFamily": "'Source Code Pro', Menlo, Monaco, 'Courier New', monospace",
 	"editor.fontSize": 13,
 	"editor.formatOnSave": true,
@@ -15,16 +16,22 @@
 	"files.insertFinalNewline": true,
 	"files.trimTrailingWhitespace": true,
 	"html.autoClosingTags": false,
+	"[html]": {
+		"editor.formatOnSave": false
+	},
 	"javascript.updateImportsOnFileMove.enabled": "always",
 	"security.workspace.trust.untrustedFiles": "open",
+	"telemetry.feedback.enabled": false,
 	"terminal.integrated.fontSize": 13,
 	"typescript.updateImportsOnFileMove.enabled": "always",
 	"update.mode": "manual",
 	"vim.smartRelativeLine": true,
 	"window.zoomLevel": 1,
 	"workbench.colorTheme": "Solarized Light",
+	"workbench.commandPalette.experimental.enableNaturalLanguageSearch": false,
 	"workbench.editor.empty.hint": "hidden",
 	"workbench.layoutControl.enabled": false,
 	"workbench.navigationControl.enabled": false,
+	"workbench.settings.enableNaturalLanguageSearch": false,
 	"workbench.startupEditor": "newUntitledFile",
 }
